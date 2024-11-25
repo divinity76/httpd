@@ -157,12 +157,6 @@ RELEASE SHOWSTOPPERS:
 PATCHES ACCEPTED TO BACKPORT FROM TRUNK:
   [ start all new proposals below, under PATCHES PROPOSED. ]
 
-  *) mod_ssl: Fix regression in PKCS#11 handling which should work without
-     SSLCryptoDevice configured
-     trunk patch: https://svn.apache.org/r1920597
-                  https://svn.apache.org/r1921076
-     2.4.x patch: svn merge -c 1920597 -c 1921076 ^/httpd/httpd/trunk .
-     +1: jorton, ylavic, rpluem
 
 PATCHES PROPOSED TO BACKPORT FROM TRUNK:
   [ New proposals should be added at the end of the list ]
