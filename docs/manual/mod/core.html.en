@@ -5157,7 +5157,7 @@ port</td></tr>
      <ol>
       <li>Port provided in <code class="directive"><a href="#servername">Servername</a></code></li>
       <li>Physical port</li>
-      <li>Default port</li>
+      <li>Default port for the scheme/protocol (such as 80 or 443)</li>
      </ol>
      </dd>
      <dt><code>UseCanonicalName Off | DNS</code></dt>
@@ -5166,7 +5166,7 @@ port</td></tr>
       <li>Parsed port from <code>Host:</code> header</li>
       <li>Physical port</li>
       <li>Port provided in <code class="directive"><a href="#servername">Servername</a></code></li>
-      <li>Default port</li>
+      <li>Default port for the scheme/protocol (such as 80 or 443)</li>
      </ol>
      </dd>
      </dl>
