@@ -5046,7 +5046,7 @@ port</description>
      <ol>
       <li>Port provided in <directive module="core">Servername</directive></li>
       <li>Physical port</li>
-      <li>Default port</li>
+      <li>Default port for the scheme/protocol (such as 80 or 443)</li>
      </ol>
      </dd>
      <dt><code>UseCanonicalName Off | DNS</code></dt>
@@ -5055,7 +5055,7 @@ port</description>
       <li>Parsed port from <code>Host:</code> header</li>
       <li>Physical port</li>
       <li>Port provided in <directive module="core">Servername</directive></li>
-      <li>Default port</li>
+      <li>Default port for the scheme/protocol (such as 80 or 443)</li>
      </ol>
      </dd>
      </dl>
