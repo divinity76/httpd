@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE modulesynopsis SYSTEM "../style/modulesynopsis.dtd">
 <?xml-stylesheet type="text/xsl" href="../style/manual.fr.xsl"?>
-<!-- English Revision: 1921401:1922171 (outdated) -->
+<!-- English Revision: 1922171 -->
 <!-- French translation : Lucien GENTIS -->
 <!-- Reviewed by : Vincent Deffontaines -->
 
@@ -5450,7 +5450,7 @@ host</context>
      <ol>
       <li>Port indiqué dans <directive module="core">Servername</directive></li>
       <li>Port physique</li>
-      <li>Port par défaut</li>
+      <li>Port par défaut pour le contexte/protocole (comme 80 ou 443)</li>
      </ol>
      </dd>
      <dt><code>UseCanonicalName Off | DNS</code></dt>
@@ -5459,7 +5459,7 @@ host</context>
       <li>Port spécifié dans l'en-tête <code>Host:</code></li>
       <li>Port physique</li>
       <li>Port spécifié par <directive module="core">Servername</directive></li>
-      <li>Port par défaut</li>
+      <li>Port par défaut pour le contexte/protocole (comme 80 ou 443)</li>
      </ol>
      </dd>
      </dl>
