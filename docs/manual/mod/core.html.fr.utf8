@@ -5532,7 +5532,7 @@ détermine son propre port</td></tr>
      <ol>
       <li>Port indiqué dans <code class="directive"><a href="#servername">Servername</a></code></li>
       <li>Port physique</li>
-      <li>Port par défaut</li>
+      <li>Port par défaut pour le contexte/protocole (comme 80 ou 443)</li>
      </ol>
      </dd>
      <dt><code>UseCanonicalName Off | DNS</code></dt>
@@ -5541,7 +5541,7 @@ détermine son propre port</td></tr>
       <li>Port spécifié dans l'en-tête <code>Host:</code></li>
       <li>Port physique</li>
       <li>Port spécifié par <code class="directive"><a href="#servername">Servername</a></code></li>
-      <li>Port par défaut</li>
+      <li>Port par défaut pour le contexte/protocole (comme 80 ou 443)</li>
      </ol>
      </dd>
      </dl>
