@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE modulesynopsis SYSTEM "../style/modulesynopsis.dtd">
 <?xml-stylesheet type="text/xsl" href="../style/manual.fr.xsl"?>
-<!-- English Revision: 1869054:1922247 (outdated) -->
+<!-- English Revision: 1922247 -->
 <!-- French translation : Lucien GENTIS -->
 <!-- Reviewed by : Vincent Deffontaines -->
 
@@ -247,7 +247,6 @@ ErrorDocument 401 "/login.shtml"
 AuthUserFile "conf/passwd"
 AuthType form
 AuthName realm
-AuthFormLoginRequiredLocation "http://example.com/login.html"
 Session On
 SessionCookieName session path=/
         </highlight>
