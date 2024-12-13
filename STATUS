@@ -210,6 +210,17 @@ PATCHES PROPOSED TO BACKPORT FROM TRUNK:
      2.4.x patch: svn merge -c r1921805 ^/httpd/httpd/trunk .
      +1: icing
 
+  *) mod_authnz_ldap: Fix attribute allocation size.
+     trunk patch: https://svn.apache.org/r1921971
+     2.4.x patch: svn merge -c 1921971 ^/httpd/httpd/trunk .
+     +1: jorton,
+     
+  *) mod_log_config: Fix LogFormat directive merging
+     trunk patch: https://svn.apache.org/r1921305
+                  https://svn.apache.org/r1921306
+     2.4.x patch: svn merge -c 1921305,1921306 ^/httpd/httpd/trunk .
+     +1: jorton,
+
 PATCHES/ISSUES THAT ARE BEING WORKED
   [ New entries should be added at the START of the list ]
 
