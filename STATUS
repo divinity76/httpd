@@ -226,6 +226,34 @@ PATCHES PROPOSED TO BACKPORT FROM TRUNK:
      2.4.x patch: svn merge -c 1921260 ^/httpd/httpd/trunk .
      +1: jorton,
 
+  *) Easy patches: synch 2.4.x and trunk
+         - server: Use apr_size_t instead of int to harden against overflows
+         - mod_http2: DOXYGEN has nothing to do here, just remove this
+                      strange "#if defined(DOXYGEN)"
+         - test: make the compiler happy when using --enable-maintainer-mode
+         - mod_proxy: Fix format string type check
+         - mod_http2: Fix comment, no functional change
+         - <various>: Remove unnecessary APLOGNO() use in TRACE-level logging
+         - mod_cache_socache: Update comment only, to remove reference to
+                              session cache
+         - mod_dav: Fix error message formatting if an unauthenticated user
+                    tries to use an authenticated user's lock token
+         - <none>: trigger ci
+         - server: Fix typo in comment
+     trunk patch:
+          https://svn.apache.org/r1903680
+          https://svn.apache.org/r1912663
+          https://svn.apache.org/r1917013
+          https://svn.apache.org/r1912941
+          https://svn.apache.org/r1913078
+          https://svn.apache.org/r1913338
+          https://svn.apache.org/r1914035
+          https://svn.apache.org/r1914439
+          https://svn.apache.org/r1915270
+          https://svn.apache.org/r1915543
+     2.4.x patch: svn merge -c 1903680,1912663,1917013,1912941,1913078,1913338,1914035,1914439,1915270,1915543 ^/httpd/httpd/trunk .
+     +1: jailletc36, 
+
 PATCHES/ISSUES THAT ARE BEING WORKED
   [ New entries should be added at the START of the list ]
 
