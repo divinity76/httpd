@@ -97,12 +97,13 @@ static int set_group_privs(void)
         if (ap_unixd_config.user_name[0] == '#') {
             struct passwd *ent;
             uid_t uid = atol(&ap_unixd_config.user_name[1]);
-
+            errno = 0;
             if ((ent = getpwuid(uid)) == NULL) {
                 ap_log_error(APLOG_MARK, APLOG_ALERT, errno, NULL, APLOGNO(02155)
-                         "getpwuid: couldn't determine user name from uid %ld, "
+                         "getpwuid: couldn't determine user name from uid %ld (errno %d: %s), "
                          "you probably need to modify the User directive",
-                         (long)uid);
+                         (long)uid, errno, strerror(errno));
+
                 return -1;
             }
 
